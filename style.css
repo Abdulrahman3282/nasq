@@ -107,3 +107,20 @@ body[dir="rtl"] {
     direction: rtl;
     text-align: right;
 }
+
+.contact {
+    padding: 40px;
+    text-align: center;
+    background: #ffffff;
+    color: #11546c; /* NASQ Dark Blue */
+}
+
+.contact a {
+    color: #dd903a; /* NASQ Orange */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
