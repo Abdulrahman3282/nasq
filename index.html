@@ -3,21 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Website</title>
+    <title>NASQ - GRC System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
-        }
-        h1 {
             color: #333;
+        }
+        header {
+            background: #001f3f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+        .btn {
+            background: #007BFF;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .lang-switch {
+            margin-top: 20px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px 20px;
+            background: white;
+        }
+        .feature {
+            max-width: 300px;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #001f3f;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is a simple webpage hosted on GitHub Pages. 🚀</p>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+            <button onclick="switchToArabic()">العربية</button>
+            <button onclick="switchToEnglish()">English</button>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1 id="title">NASQ - GRC System</h1>
+        <p id="description">A cutting-edge Governance, Risk, and Compliance system designed for modern enterprises.</p>
+        <a href="brochure.pdf" download class="btn" id="download-btn">Download Brochure</a>
+    </section>
+    
+    <section id="features" class="features">
+        <div class="feature">
+            <h2>Risk Management</h2>
+            <p>Proactively identify, assess, and mitigate risks.</p>
+        </div>
+        <div class="feature">
+            <h2>Compliance Automation</h2>
+            <p>Ensure seamless adherence to regulatory requirements.</p>
+        </div>
+        <div class="feature">
+            <h2>AI-Powered Insights</h2>
+            <p>Leverage artificial intelligence to enhance governance strategies.</p>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2025 NASQ - All Rights Reserved</p>
+    </footer>
+    
+    <script>
+        function switchToArabic() {
+            document.getElementById("title").innerText = "نظام NASQ لإدارة الحوكمة والمخاطر والامتثال";
+            document.getElementById("description").innerText = "نظام متطور لإدارة الحوكمة والمخاطر والامتثال للشركات الحديثة.";
+            document.getElementById("download-btn").innerText = "تحميل الكتيب";
+            document.body.style.direction = "rtl";
+            document.body.style.textAlign = "right";
+        }
+        function switchToEnglish() {
+            document.getElementById("title").innerText = "NASQ - GRC System";
+            document.getElementById("description").innerText = "A cutting-edge Governance, Risk, and Compliance system designed for modern enterprises.";
+            document.getElementById("download-btn").innerText = "Download Brochure";
+            document.body.style.direction = "ltr";
+            document.body.style.textAlign = "center";
+        }
+    </script>
 </body>
 </html>
