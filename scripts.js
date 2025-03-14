@@ -1,6 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = function () {
     const langSwitch = document.getElementById("lang-switch");
     const htmlTag = document.documentElement;
+
+    if (!langSwitch) {
+        console.error("Language switch button not found!");
+        return;
+    }
 
     langSwitch.addEventListener("click", function () {
         if (htmlTag.lang === "en") {
@@ -13,4 +18,4 @@ document.addEventListener("DOMContentLoaded", function () {
             langSwitch.textContent = "العربية";
         }
     });
-});
+};
