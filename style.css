@@ -5,11 +5,12 @@ body {
     padding: 0;
     text-align: center;
     background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Navigation */
+/* Navigation Bar */
 .navbar {
-    background: #222;
+    background: #11546c; /* NASQ Dark Blue */
     padding: 15px;
 }
 
@@ -17,30 +18,88 @@ body {
     color: white;
     text-decoration: none;
     margin: 10px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #dd903a; /* NASQ Orange */
 }
 
 /* Hero Section */
 .hero {
-    background: #007bff;
+    background: #11546c; /* NASQ Dark Blue */
     color: white;
     padding: 50px;
 }
 
-/* Button */
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Download Button */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background: #28a745;
+    padding: 12px 24px;
+    background: #dd903a; /* NASQ Orange */
     color: white;
     text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
     border-radius: 5px;
     margin-top: 10px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #c97b2a;
+}
+
+/* Features Section */
+.features {
+    padding: 40px;
+    background: #ffffff;
+}
+
+.features h2 {
+    color: #11546c; /* NASQ Dark Blue */
+}
+
+.feature-box {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 15px auto;
+    width: 80%;
+    border-left: 5px solid #dd903a; /* NASQ Orange */
+    text-align: left;
+}
+
+/* Footer */
+.footer {
+    background: #11546c; /* NASQ Dark Blue */
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
 }
 
 /* Language Switch */
-.lang-switch {
-    margin-top: 20px;
+#lang-switch {
+    background: none;
+    color: white;
+    border: 2px solid #dd903a;
+    padding: 8px 16px;
+    margin-left: 15px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+#lang-switch:hover {
+    background: #dd903a;
 }
 
 /* RTL Support */
