@@ -124,3 +124,9 @@ body[dir="rtl"] {
 .contact a:hover {
     text-decoration: underline;
 }
+
+.logo {
+    height: 50px; /* Adjust size as needed */
+    vertical-align: middle;
+    margin-right: 15px;
+}
