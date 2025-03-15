@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentLang = localStorage.getItem("lang") || "en"; // Default to English
 
     function loadTranslations(lang) {
-        fetch("translations.json")
+        fetch("translation.json")
             .then(response => response.json())
             .then(data => {
                 document.querySelectorAll("[data-key]").forEach(el => {
