@@ -8,13 +8,16 @@ body {
     text-align: center;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* ==========================================================
    Navigation Bar
    ========================================================== */
 .navbar {
-    background: #1a6d87; /* Lighter NASQ Blue */
+    background: #1a6d87;
     padding: 15px;
 }
 
@@ -26,36 +29,36 @@ body {
 }
 
 .navbar a:hover {
-    color: #dd903a; /* NASQ Orange */
+    color: #dd903a;
 }
 
 /* Logo */
 .logo {
-    height: 150px; /* Adjust size as needed */
+    height: 150px;
     vertical-align: middle;
     margin-right: 15px;
 }
 
 /* Language Switch Button */
 #lang-switch {
-    background: none;
+    background: transparent;
     color: white;
-    border: 2px solid #dd903a; /* NASQ Orange */
+    border: 2px solid #dd903a;
     padding: 8px 16px;
-    margin-left: 15px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 #lang-switch:hover {
     background: #dd903a;
+    color: white;
 }
 
 /* ==========================================================
    Hero Section
    ========================================================== */
 .hero {
-    background: #1a6d87; /* Lighter NASQ Blue */
+    background: #1a6d87;
     color: white;
     padding: 50px;
 }
@@ -72,7 +75,7 @@ body {
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    background: #dd903a; /* NASQ Orange */
+    background: #dd903a;
     color: white;
     text-decoration: none;
     font-size: 1.1em;
@@ -87,30 +90,9 @@ body {
 .btn:hover {
     background: #c97b2a;
 }
-/* ==========================================================
-   Introduction Section
-   ========================================================== */
-.intro {
-    padding: 40px;
-    background: #ffffff;
-    color: #11546c; /* NASQ Dark Blue */
-    text-align: center;
-    max-width: 80%;
-    margin: 20px auto;
-}
 
-.intro h2 {
-    font-size: 2em;
-    color: #11546c; /* NASQ Dark Blue */
-}
-
-.intro p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #333;
-}
 /* ==========================================================
-   Features Section
+   Features Section (Merged with Intro)
    ========================================================== */
 .features {
     padding: 40px;
@@ -118,7 +100,7 @@ body {
 }
 
 .features h2 {
-    color: #1a6d87; /* Lighter NASQ Blue */
+    color: #1a6d87;
 }
 
 /* Individual Feature Box */
@@ -126,8 +108,8 @@ body {
     background: #f9f9f9;
     padding: 20px;
     margin: 15px auto;
-    width: 80%;
-    border-left: 5px solid #dd903a; /* NASQ Orange */
+    max-width: 700px; /* Instead of width: 80% */
+    border-left: 5px solid #dd903a;
     text-align: left;
 }
 
@@ -139,18 +121,18 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh; /* Centers content vertically */
+    height: 80vh;
     text-align: center;
     background: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #1a6d87; /* Lighter NASQ Blue */
+    color: #1a6d87;
 }
 
 /* Contact Links */
 .contact a {
-    color: #dd903a; /* NASQ Orange */
+    color: #dd903a;
     text-decoration: none;
     font-weight: bold;
 }
@@ -160,13 +142,13 @@ body {
 }
 
 /* ==========================================================
-   Footer
+   Footer (Now flexible)
    ========================================================== */
 .footer {
-    background: #1a6d87; /* Lighter NASQ Blue */
+    background: #1a6d87;
     color: white;
     padding: 15px;
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 /* ==========================================================
