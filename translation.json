@@ -1,0 +1,36 @@
+{
+    "en": {
+        "home": "Home",
+        "features": "Features",
+        "about": "About",
+        "contact": "Contact Us",
+        "hero_title": "Welcome to NASQ",
+        "hero_desc": "AI-powered GRC system for smarter governance, risk, and compliance.",
+        "download": "Download Brochure",
+        "why_choose": "Why Choose NASQ?",
+        "feature1": "AI-Powered Insights",
+        "feature1_desc": "Automate compliance and risk analysis with cutting-edge AI.",
+        "feature2": "Seamless Integration",
+        "feature2_desc": "Works with your existing enterprise systems.",
+        "feature3": "Data Security",
+        "feature3_desc": "Ensuring top-tier security and compliance.",
+        "footer": "© 2025 NASQ. All rights reserved."
+    },
+    "ar": {
+        "home": "الرئيسية",
+        "features": "المزايا",
+        "about": "من نحن",
+        "contact": "اتصل بنا",
+        "hero_title": "مرحبًا بك في ناسق",
+        "hero_desc": "نظام الحوكمة وإدارة المخاطر والامتثال الذكي المدعوم بالذكاء الاصطناعي.",
+        "download": "تحميل الكتيب",
+        "why_choose": "لماذا تختار ناسق؟",
+        "feature1": "تحليلات مدعومة بالذكاء الاصطناعي",
+        "feature1_desc": "أتمتة الامتثال وتحليل المخاطر باستخدام أحدث التقنيات.",
+        "feature2": "تكامل سلس",
+        "feature2_desc": "يعمل مع أنظمة المؤسسات الحالية لديك بكل سهولة.",
+        "feature3": "أمان البيانات",
+        "feature3_desc": "ضمان أعلى مستويات الأمان والامتثال.",
+        "footer": "© 2025 ناسق. جميع الحقوق محفوظة."
+    }
+}
