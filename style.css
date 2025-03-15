@@ -1,4 +1,6 @@
-/* General Styles */
+/* ==========================================================
+   General Styles
+   ========================================================== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +10,9 @@ body {
     color: #333;
 }
 
-/* Navigation Bar */
+/* ==========================================================
+   Navigation Bar
+   ========================================================== */
 .navbar {
     background: #11546c; /* NASQ Dark Blue */
     padding: 15px;
@@ -17,7 +21,7 @@ body {
 .navbar a {
     color: white;
     text-decoration: none;
-    margin: 10px;
+    margin: 0 10px;
     font-weight: bold;
 }
 
@@ -25,7 +29,31 @@ body {
     color: #dd903a; /* NASQ Orange */
 }
 
-/* Hero Section */
+/* Logo */
+.logo {
+    height: 50px; /* Adjust size as needed */
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+/* Language Switch Button */
+#lang-switch {
+    background: none;
+    color: white;
+    border: 2px solid #dd903a; /* NASQ Orange */
+    padding: 8px 16px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#lang-switch:hover {
+    background: #dd903a;
+}
+
+/* ==========================================================
+   Hero Section
+   ========================================================== */
 .hero {
     background: #11546c; /* NASQ Dark Blue */
     color: white;
@@ -60,7 +88,9 @@ body {
     background: #c97b2a;
 }
 
-/* Features Section */
+/* ==========================================================
+   Features Section
+   ========================================================== */
 .features {
     padding: 40px;
     background: #ffffff;
@@ -70,6 +100,7 @@ body {
     color: #11546c; /* NASQ Dark Blue */
 }
 
+/* Individual Feature Box */
 .feature-box {
     background: #f9f9f9;
     padding: 20px;
@@ -79,35 +110,9 @@ body {
     text-align: left;
 }
 
-/* Footer */
-.footer {
-    background: #11546c; /* NASQ Dark Blue */
-    color: white;
-    padding: 15px;
-    margin-top: 20px;
-}
-
-/* Language Switch */
-#lang-switch {
-    background: none;
-    color: white;
-    border: 2px solid #dd903a;
-    padding: 8px 16px;
-    margin-left: 15px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#lang-switch:hover {
-    background: #dd903a;
-}
-
-/* RTL Support */
-body[dir="rtl"] {
-    direction: rtl;
-    text-align: right;
-}
-
+/* ==========================================================
+   Contact Page
+   ========================================================== */
 .contact {
     padding: 40px;
     text-align: center;
@@ -115,6 +120,7 @@ body[dir="rtl"] {
     color: #11546c; /* NASQ Dark Blue */
 }
 
+/* Contact Links */
 .contact a {
     color: #dd903a; /* NASQ Orange */
     text-decoration: none;
@@ -125,22 +131,46 @@ body[dir="rtl"] {
     text-decoration: underline;
 }
 
-.logo {
-    height: 50px; /* Adjust size as needed */
-    vertical-align: middle;
-    margin-right: 15px;
+/* ==========================================================
+   Footer
+   ========================================================== */
+.footer {
+    background: #11546c; /* NASQ Dark Blue */
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
 }
 
-/* Right-to-Left (RTL) Support */
+/* ==========================================================
+   RTL (Right-to-Left) Language Support
+   ========================================================== */
 body[dir="rtl"] {
     direction: rtl;
     text-align: right;
 }
 
-.navbar a {
+/* Adjust navbar alignment for RTL */
+body[dir="rtl"] .navbar a {
     margin: 0 10px;
 }
 
-.contact {
+/* Adjust contact text alignment for RTL */
+body[dir="rtl"] .contact {
     text-align: right;
+}
+
+/* ==========================================================
+   Centering the Contact Page Content
+   ========================================================== */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* Centers content vertically */
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
