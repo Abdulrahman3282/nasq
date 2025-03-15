@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const langSwitch = document.getElementById("lang-switch");
     let currentLang = localStorage.getItem("lang") || "en"; // Default to English
 
-    // Function to load translations
+    // Function to load translation
     function loadTranslations(lang) {
-        fetch("translations.json")
+        fetch("translation.json")
             .then(response => response.json())
             .then(data => {
                 document.querySelectorAll("[data-key]").forEach(el => {
