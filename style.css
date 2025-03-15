@@ -130,3 +130,17 @@ body[dir="rtl"] {
     vertical-align: middle;
     margin-right: 15px;
 }
+
+/* Right-to-Left (RTL) Support */
+body[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+.navbar a {
+    margin: 0 10px;
+}
+
+.contact {
+    text-align: right;
+}
