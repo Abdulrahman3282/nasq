@@ -22,6 +22,7 @@
         "feature6_desc": "Proactively identify, assess, and mitigate risks.",
         "nasq_intro": "NASQ is an advanced, AI-powered management software designed to simplify the implementation, certification, and ongoing compliance with ISO and other national & international standards, including ISO 9001 and Annex SL sub-clauses.",
         "nasq_intro_2": "Developed by industry experts, it seamlessly integrates risk and quality management frameworks to enhance efficiency and accuracy. NASQ revolutionizes traditional management practices, ensuring your organization stays compliant while driving digital transformation and operational excellence.",
+        "what_is_nasq": "What is NASQ?",
         "footer": "© 2025 NASQ. All rights reserved."
     },
     "ar": {
@@ -45,8 +46,9 @@
         "feature5_desc": "توحد عمليات الجودة والمخاطر والامتثال.",
         "feature6": "إدارة المخاطر المتكاملة",
         "feature6_desc": "تحديد وتقييم وتخفيف المخاطر بشكل استباقي.",
-        "nasq_intro": "NASQ هو برنامج إدارة متقدم مدعوم بالذكاء الاصطناعي يهدف إلى تبسيط تطبيق المعايير، والحصول على الشهادات، وضمان الامتثال المستمر مع معايير ISO وغيرها من المعايير الوطنية والدولية، بما في ذلك ISO 9001 و Annex SL.",
+        "nasq_intro": "نسق هو برنامج إدارة متقدم مدعوم بالذكاء الاصطناعي يهدف إلى تبسيط تطبيق المعايير، والحصول على الشهادات، وضمان الامتثال المستمر مع معايير ISO وغيرها من المعايير الوطنية والدولية، بما في ذلك ISO 9001 و Annex SL.",
         "nasq_intro_2": "تم تطويره بواسطة خبراء في الصناعة، ويقوم بدمج إدارة المخاطر والإدارة النوعية لتحسين الكفاءة والدقة. ثورة في ممارسات الإدارة التقليدية، مما يضمن أن تظل منظمتك ملتزمة مع دفع التحول الرقمي والتميز التشغيلي.",
+        "what_is_nasq": "ما هو نسق؟",
         "footer": "© 2025 نسق. جميع الحقوق محفوظة."
     }
 }
