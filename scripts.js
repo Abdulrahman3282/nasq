@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const langSwitch = document.getElementById("lang-switch");
+    const brochureLink = document.getElementById("brochure-link");
     let currentLang = localStorage.getItem("lang") || "en"; // Default to English
 
-    // Function to load translation
     function loadTranslations(lang) {
-        fetch("translation.json")
+        fetch("translations.json")
             .then(response => response.json())
             .then(data => {
                 document.querySelectorAll("[data-key]").forEach(el => {
@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.documentElement.lang = lang;
                 document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
                 langSwitch.textContent = lang === "ar" ? "English" : "العربية";
+
+                // Change the brochure link based on language
+                brochureLink.href = lang === "ar" ? "NASQ Brochure Ar.pdf" : "NASQ Brochure En.pdf";
             })
             .catch(error => console.error("Translation file error:", error));
     }
