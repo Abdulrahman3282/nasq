@@ -1,45 +1,53 @@
 /* ==========================================================
-   General Styles
+   General Styles - Improved Layout
    ========================================================== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
     background-color: #f4f4f4;
     color: #333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* ==========================================================
-   Navigation Bar
+   Navigation Bar - Improved Spacing & Organization
    ========================================================== */
 .navbar {
     background: #1a6d87;
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    flex-wrap: wrap;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 .navbar a:hover {
     color: #dd903a;
 }
 
-/* Logo */
 .logo {
-    height: 150px;
-    vertical-align: middle;
-    margin-right: 15px;
+    height: 80px;
 }
 
-/* Language Switch Button */
 #lang-switch {
     background: transparent;
     color: white;
@@ -55,23 +63,25 @@ body {
 }
 
 /* ==========================================================
-   Hero Section
+   Hero Section - Centered & Well Spaced
    ========================================================== */
 .hero {
     background: #1a6d87;
     color: white;
-    padding: 50px;
+    text-align: center;
+    padding: 80px 20px;
 }
 
 .hero h1 {
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 .hero p {
     font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* Download Button */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -81,8 +91,8 @@ body {
     font-size: 1.1em;
     font-weight: bold;
     border-radius: 5px;
-    margin-top: 10px;
-    transition: 0.3s;
+    margin-top: 20px;
+    transition: background 0.3s;
     border: none;
     cursor: pointer;
 }
@@ -92,79 +102,60 @@ body {
 }
 
 /* ==========================================================
-   Features Section (Merged with Intro)
+   Features Section - Grid Layout for Better Organization
    ========================================================== */
 .features {
-    padding: 40px;
+    padding: 60px 5%;
+    text-align: center;
     background: #ffffff;
 }
 
 .features h2 {
     color: #1a6d87;
+    margin-bottom: 30px;
+    font-size: 2.5em;
 }
 
-/* Individual Feature Box */
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .feature-box {
     background: #f9f9f9;
     padding: 20px;
-    margin: 15px auto;
-    max-width: 700px; /* Instead of width: 80% */
     border-left: 5px solid #dd903a;
     text-align: left;
 }
 
 /* ==========================================================
-   Contact Page
-   ========================================================== */
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    text-align: center;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #1a6d87;
-}
-
-/* Contact Links */
-.contact a {
-    color: #dd903a;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-/* ==========================================================
-   Footer (Now flexible)
+   Footer - Flexible & Well Aligned
    ========================================================== */
 .footer {
     background: #1a6d87;
     color: white;
-    padding: 15px;
+    text-align: center;
+    padding: 20px;
     margin-top: auto;
 }
 
 /* ==========================================================
-   RTL (Right-to-Left) Language Support
+   RTL (Right-to-Left) Language Support - Improved
    ========================================================== */
 body[dir="rtl"] {
     direction: rtl;
     text-align: right;
 }
 
-/* Adjust navbar alignment for RTL */
 body[dir="rtl"] .navbar a {
     margin: 0 10px;
 }
 
-/* Adjust contact text alignment for RTL */
-body[dir="rtl"] .contact {
+body[dir="rtl"] .feature-box {
     text-align: right;
+    border-left: none;
+    border-right: 5px solid #dd903a;
 }
