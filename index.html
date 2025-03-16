@@ -1,26 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Character encoding and viewport settings for responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Page Title -->
-    <title>NASQ - GRC System</title>
-
-    <!-- Favicon -->
+    <title>NASQ - Modern GRC Platform</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-    <!-- Prevent browser caching to ensure users always get the latest version -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-
-    <!-- Link to CSS file (Version 1.6 for cache busting) -->
-    <link rel="stylesheet" href="style.css?v=1.6">
-
-    <!-- Link to JavaScript file (Version 1.6 for cache busting) -->
-    <script src="scripts.js?v=1.6" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2.0">
 </head>
 <body>
     <!-- Navigation -->
@@ -28,67 +14,118 @@
         <a href="/">
             <img src="logo.png" alt="NASQ Logo" class="logo">
         </a>
-        <a href="#" data-key="home">Home</a>
-        <a href="#" data-key="features">Features</a>
-        <a href="#" data-key="about">About</a>
-        <a href="contact.html" data-key="contact">Contact Us</a>
+        <div class="nav-links">
+            <a href="#" data-key="home">Home</a>
+            <a href="#" data-key="features">Features</a>
+            <a href="#" data-key="about">About</a>
+            <a href="contact.html" data-key="contact">Contact</a>
+        </div>
         <button id="lang-switch" class="btn">العربية</button>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero">
-        <h1 data-key="hero_title">Welcome to NASQ</h1>
-        <p data-key="hero_desc">AI-powered GRC system for smarter governance, risk, and compliance.</p>
-        <a id="brochure-link" href="NASQ Brochure En.pdf" download class="btn" data-key="download">Download Brochure</a>
+        <div class="container">
+            <h1 data-key="hero_title">Transform Your GRC Management</h1>
+            <p data-key="hero_desc">AI-powered governance, risk, and compliance solutions for the modern enterprise</p>
+            <a href="NASQ_Brochure.pdf" download class="btn" data-key="download">
+                Download Brochure
+            </a>
+        </div>
     </header>
 
     <!-- What is NASQ? Section -->
-    <section class="features intro-section">
-        <h2 data-key="what_is_nasq">What is NASQ?</h2>
-        <p data-key="nasq_intro">
-            NASQ is an advanced, AI-powered management software designed to simplify the implementation, 
-            certification, and ongoing compliance with ISO and other national & international standards, 
-            including ISO 9001 and Annex SL sub-clauses.
-        </p>
-        <p data-key="nasq_intro_2">
-            Developed by industry experts, it seamlessly integrates risk and quality management frameworks 
-            to enhance efficiency and accuracy. NASQ revolutionizes traditional management practices, 
-            ensuring your organization stays compliant while driving digital transformation and operational excellence.
-        </p>
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2 data-key="what_is_nasq">Next-Gen GRC Platform</h2>
+                    <p data-key="nasq_intro">
+                        NASQ revolutionizes compliance management with AI-driven automation, 
+                        real-time risk insights, and seamless integration with global standards.
+                    </p>
+                    <p data-key="nasq_intro_2">
+                        Our platform empowers organizations to streamline certification processes, 
+                        maintain continuous compliance, and transform risk management into 
+                        a strategic advantage.
+                    </p>
+                </div>
+                <div class="intro-image">
+                    <img src="dashboard-preview.jpg" alt="NASQ Platform Interface">
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <!-- Why Choose NASQ? Section -->
+
+    <!-- Why NASQ? Section -->
     <section class="features">
-        <h2 data-key="why_choose">Why Choose NASQ?</h2>
-        <div class="feature-box">
-            <h3 data-key="feature1">AI-Driven Capabilities</h3>
-            <p data-key="feature1_desc">Enhance decision-making with intelligent automation and analytics.</p>
-        </div>
-        <div class="feature-box">
-            <h3 data-key="feature2">Unlimited Standards Configuration</h3>
-            <p data-key="feature2_desc">Customize and manage multiple compliance standards seamlessly.</p>
-        </div>
-        <div class="feature-box">
-            <h3 data-key="feature3">Comprehensive Audit Report</h3>
-            <p data-key="feature3_desc">Generate detailed reports to ensure transparency and compliance.</p>
-        </div>
-        <div class="feature-box">
-            <h3 data-key="feature4">Corrective Actions Management</h3>
-            <p data-key="feature4_desc">Track and resolve compliance issues efficiently.</p>
-        </div>
-        <div class="feature-box">
-            <h3 data-key="feature5">Integrated Management System</h3>
-            <p data-key="feature5_desc">Unify quality, risk, and compliance processes.</p>
-        </div>
-        <div class="feature-box">
-            <h3 data-key="feature6">Integrated Risk Management</h3>
-            <p data-key="feature6_desc">Proactively identify, assess, and mitigate risks.</p>
+        <div class="container">
+            <h2 data-key="why_choose">Why Enterprises Choose NASQ</h2>
+            <div class="feature-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="ai-icon.svg" alt="AI Icon">
+                    </div>
+                    <h3 data-key="feature1">AI-Powered Automation</h3>
+                    <p data-key="feature1_desc">Smart compliance workflows and predictive risk analytics</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="config-icon.svg" alt="Configuration Icon">
+                    </div>
+                    <h3 data-key="feature2">Flexible Configuration</h3>
+                    <p data-key="feature2_desc">Customizable frameworks for any standard or regulation</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="audit-icon.svg" alt="Audit Icon">
+                    </div>
+                    <h3 data-key="feature3">Smart Audits</h3>
+                    <p data-key="feature3_desc">Automated evidence collection and real-time reporting</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="risk-icon.svg" alt="Risk Icon">
+                    </div>
+                    <h3 data-key="feature4">Integrated Risk Management</h3>
+                    <p data-key="feature4_desc">Holistic risk assessment and mitigation strategies</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="workflow-icon.svg" alt="Workflow Icon">
+                    </div>
+                    <h3 data-key="feature5">Smart Workflows</h3>
+                    <p data-key="feature5_desc">Automated compliance tasks and notifications</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="analytics-icon.svg" alt="Analytics Icon">
+                    </div>
+                    <h3 data-key="feature6">Advanced Analytics</h3>
+                    <p data-key="feature6_desc">Real-time compliance health monitoring</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p data-key="footer">&copy; 2025 NASQ. All rights reserved.</p>
+        <div class="container">
+            <p data-key="footer">&copy; 2025 NASQ. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="scripts.js?v=2.0"></script>
 </body>
 </html>
