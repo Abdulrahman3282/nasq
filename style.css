@@ -23,15 +23,15 @@ body {
 }
 
 /* ==========================================================
-   Navigation Bar - Updated Spacing
+   Navigation Bar - Adjusted Spacing for Stylish Look
    ========================================================== */
 .navbar {
     background: #1a6d87;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
-    gap: 15px; /* Reduced gap for a sleeker look */
+    padding: 15px 4%;
+    gap: 20px;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
@@ -41,7 +41,7 @@ body {
 .navbar a {
     color: white;
     text-decoration: none;
-    margin: 0 12px; /* Reduced spacing for a more compact menu */
+    margin: 0 15px;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -51,7 +51,7 @@ body {
 }
 
 .logo {
-    height: 100px; /* Enlarged logo for better visibility */
+    height: 90px; /* Increased size for better visibility */
     transition: transform 0.3s ease;
 }
 
@@ -119,20 +119,21 @@ body {
 }
 
 /* ==========================================================
-   What is NASQ Section - Full Width Content
+   What is NASQ Section - Expanded Width
    ========================================================== */
 .intro-section {
-    grid-column: 1 / -1; /* Span full grid width */
-    width: 90%; /* Increased width for better text flow */
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px; /* Reduced padding for more space */
     text-align: justify;
+    line-height: 1.8;
+    font-size: 1.1em;
+    padding: 20px 0;
 }
 
 .intro-section p {
-    font-size: 1.1em;
-    line-height: 1.8;
     color: #444;
+    margin-bottom: 15px;
 }
 
 /* ==========================================================
@@ -215,4 +216,61 @@ body[dir="rtl"] .feature-box {
     text-align: right;
     border-left: none;
     border-right: 5px solid #dd903a;
+}
+
+/* ==========================================================
+   Responsive Design - Improved Layout
+   ========================================================== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 12px 4%;
+    }
+
+    .navbar a {
+        margin: 0 8px;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        padding: 40px 5%;
+        margin: 40px 0;
+    }
+
+    .feature-box {
+        text-align: center;
+    }
+
+    .logo {
+        height: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .features h2 {
+        font-size: 2em;
+    }
 }
