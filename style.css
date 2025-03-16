@@ -23,7 +23,7 @@ body {
 }
 
 /* ==========================================================
-   Navigation Bar
+   Navigation Bar - Updated Spacing
    ========================================================== */
 .navbar {
     background: #1a6d87;
@@ -31,7 +31,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    gap: 25px;
+    gap: 30px; /* Increased gap */
     flex-wrap: wrap;
     position: sticky;
     top: 0;
@@ -41,7 +41,7 @@ body {
 .navbar a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px; /* Increased spacing between links */
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -51,7 +51,7 @@ body {
 }
 
 .logo {
-    height: 70px;
+    height: 80px; /* Reverted to original size */
     transition: transform 0.3s ease;
 }
 
@@ -116,6 +116,23 @@ body {
 .btn:hover {
     background: #c97b2a;
     transform: translateY(-2px);
+}
+
+/* ==========================================================
+   What is NASQ Section - Full Width Content
+   ========================================================== */
+.intro-section {
+    grid-column: 1 / -1; /* Span full grid width */
+    max-width: 1000px; /* Increased max-width */
+    margin: 0 auto;
+    padding: 30px;
+    text-align: justify; /* Better text alignment */
+}
+
+.intro-section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #444;
 }
 
 /* ==========================================================
@@ -201,14 +218,18 @@ body[dir="rtl"] .feature-box {
 }
 
 /* ==========================================================
-   Responsive Design
+   Responsive Design - Updated Menu Spacing
    ========================================================== */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
-        padding: 15px;
+        gap: 20px; /* Increased mobile gap */
+        padding: 15px 5%;
+    }
+
+    .navbar a {
+        margin: 0 10px; /* Better mobile spacing */
     }
 
     .hero {
@@ -230,7 +251,7 @@ body[dir="rtl"] .feature-box {
     }
 
     .logo {
-        height: 60px;
+        height: 80px; /* Maintain original size */
     }
 }
 
