@@ -31,7 +31,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    gap: 30px; /* Increased gap */
+    gap: 15px; /* Reduced gap for a sleeker look */
     flex-wrap: wrap;
     position: sticky;
     top: 0;
@@ -41,7 +41,7 @@ body {
 .navbar a {
     color: white;
     text-decoration: none;
-    margin: 0 20px; /* Increased spacing between links */
+    margin: 0 12px; /* Reduced spacing for a more compact menu */
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -51,7 +51,7 @@ body {
 }
 
 .logo {
-    height: 80px; /* Reverted to original size */
+    height: 100px; /* Enlarged logo for better visibility */
     transition: transform 0.3s ease;
 }
 
@@ -123,10 +123,10 @@ body {
    ========================================================== */
 .intro-section {
     grid-column: 1 / -1; /* Span full grid width */
-    max-width: 1000px; /* Increased max-width */
+    width: 90%; /* Increased width for better text flow */
     margin: 0 auto;
-    padding: 30px;
-    text-align: justify; /* Better text alignment */
+    padding: 20px; /* Reduced padding for more space */
+    text-align: justify;
 }
 
 .intro-section p {
@@ -215,61 +215,4 @@ body[dir="rtl"] .feature-box {
     text-align: right;
     border-left: none;
     border-right: 5px solid #dd903a;
-}
-
-/* ==========================================================
-   Responsive Design - Updated Menu Spacing
-   ========================================================== */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px; /* Increased mobile gap */
-        padding: 15px 5%;
-    }
-
-    .navbar a {
-        margin: 0 10px; /* Better mobile spacing */
-    }
-
-    .hero {
-        padding: 80px 20px;
-    }
-
-    .hero h1 {
-        font-size: 2.5em;
-    }
-
-    .features {
-        grid-template-columns: 1fr;
-        padding: 40px 5%;
-        margin: 40px 0;
-    }
-
-    .feature-box {
-        text-align: center;
-    }
-
-    .logo {
-        height: 80px; /* Maintain original size */
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
-
-    .btn {
-        font-size: 1em;
-        padding: 10px 20px;
-    }
-
-    .features h2 {
-        font-size: 2em;
-    }
 }
