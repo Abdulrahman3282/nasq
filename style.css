@@ -1,5 +1,5 @@
 /* ==========================================================
-   General Styles - Improved Layout
+   General Styles
    ========================================================== */
 body {
     font-family: Arial, sans-serif;
@@ -11,25 +11,31 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
+    line-height: 1.6;
+    font-size: 1.05em;
 }
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 20px;
 }
 
 /* ==========================================================
-   Navigation Bar - Improved Spacing & Organization
+   Navigation Bar
    ========================================================== */
 .navbar {
     background: #1a6d87;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5%;
+    padding: 20px 5%;
+    gap: 25px;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar a {
@@ -45,7 +51,12 @@ body {
 }
 
 .logo {
-    height: 80px;
+    height: 70px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 #lang-switch {
@@ -55,6 +66,7 @@ body {
     padding: 8px 16px;
     cursor: pointer;
     transition: 0.3s;
+    letter-spacing: 0.5px;
 }
 
 #lang-switch:hover {
@@ -63,23 +75,26 @@ body {
 }
 
 /* ==========================================================
-   Hero Section - Centered & Well Spaced
+   Hero Section
    ========================================================== */
 .hero {
-    background: #1a6d87;
+    background: linear-gradient(135deg, #1a6d87 0%, #144d60 100%);
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 120px 20px;
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 3.2em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .hero p {
     font-size: 1.2em;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 
 .btn {
@@ -92,58 +107,83 @@ body {
     font-weight: bold;
     border-radius: 5px;
     margin-top: 20px;
-    transition: background 0.3s;
+    transition: all 0.3s ease;
     border: none;
     cursor: pointer;
+    letter-spacing: 0.5px;
 }
 
 .btn:hover {
     background: #c97b2a;
+    transform: translateY(-2px);
 }
 
 /* ==========================================================
-   Features Section - Grid Layout for Better Organization
+   Features Section
    ========================================================== */
 .features {
-    padding: 60px 5%;
+    padding: 80px 5%;
     text-align: center;
     background: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 60px auto;
 }
 
-.features h2 {
+.features > h2 {
+    grid-column: 1 / -1;
     color: #1a6d87;
     margin-bottom: 30px;
     font-size: 2.5em;
-}
-
-.feature-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 .feature-box {
-    background: #f9f9f9;
-    padding: 20px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
     border-left: 5px solid #dd903a;
     text-align: left;
 }
 
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-box h3 {
+    color: #1a6d87;
+    margin-top: 0;
+    font-size: 1.4em;
+}
+
+.feature-box p {
+    line-height: 1.7;
+    color: #666;
+}
+
 /* ==========================================================
-   Footer - Flexible & Well Aligned
+   Footer
    ========================================================== */
 .footer {
     background: #1a6d87;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     margin-top: auto;
 }
 
+.footer p {
+    margin: 0;
+}
+
 /* ==========================================================
-   RTL (Right-to-Left) Language Support - Improved
+   RTL Support
    ========================================================== */
 body[dir="rtl"] {
     direction: rtl;
@@ -158,4 +198,57 @@ body[dir="rtl"] .feature-box {
     text-align: right;
     border-left: none;
     border-right: 5px solid #dd903a;
+}
+
+/* ==========================================================
+   Responsive Design
+   ========================================================== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        padding: 40px 5%;
+        margin: 40px 0;
+    }
+
+    .feature-box {
+        text-align: center;
+    }
+
+    .logo {
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .features h2 {
+        font-size: 2em;
+    }
 }
