@@ -108,12 +108,17 @@
                 <div class="feature-card">
                     <div class="feature-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50" height="50">
+                            <!-- Background Circle -->
                             <circle cx="50" cy="50" r="45" fill="#13536c"/>
-                            <path d="M40 35 L60 35 L60 65 L40 65 Z" stroke="#fff" stroke-width="2" fill="none"/>
-                            <path d="M50 35 L50 65" stroke="#fff" stroke-width="2"/>
-                            <path d="M40 40 L60 40" stroke="#fff" stroke-width="2"/>
-                            <circle cx="50" cy="40" r="4" fill="#dd903a"/>
-                            <circle cx="50" cy="60" r="4" fill="#dd903a"/>
+                            
+                            <!-- Document -->
+                            <rect x="32" y="30" width="36" height="40" rx="3" ry="3" fill="none" stroke="#fff" stroke-width="2"/>
+                            <line x1="38" y1="40" x2="62" y2="40" stroke="#fff" stroke-width="2"/>
+                            <line x1="38" y1="50" x2="62" y2="50" stroke="#fff" stroke-width="2"/>
+                            <line x1="38" y1="60" x2="52" y2="60" stroke="#fff" stroke-width="2"/>
+                
+                            <!-- Checkmark (Audit Approval) -->
+                            <polyline points="45,65 50,70 60,55" fill="none" stroke="#dd903a" stroke-width="3"/>
                         </svg>
                     </div>
                     <h3 data-key="feature3">Smart Audits</h3>
