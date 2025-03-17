@@ -23,7 +23,7 @@ body {
     background-color: #ffffff;
 }
 
-h1, h2, h3 {
+h2, h3 {
     color: var(--primary-blue);
     font-weight: 700;
 }
