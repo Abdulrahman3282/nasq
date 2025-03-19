@@ -1,40 +1,84 @@
 {
-  "en": {
-    "welcome": "Welcome to NASQ",
-    "about": "About NASQ",
-    "services": "Our Services",
-    "contact": "Contact Us",
-    "learn_more": "Learn More",
-    "download_brochure": "Download Brochure",
-    "phone": "Phone Number",
-    "email": "Email Address",
-    "location": "Location",
-    "follow_us": "Follow Us",
-    "submit": "Submit",
-    "name": "Name",
-    "message": "Message",
-    "send_message": "Send Message",
-    "home": "Home",
-    "nasq_description": "NASQ is an AI-powered GRC system designed to enhance governance, risk, and compliance management.",
-    "address": "Riyadh, KSA"
-  },
-  "ar": {
-    "welcome": "مرحبًا بك في نسق",
-    "about": "عن نسق",
-    "services": "خدماتنا",
-    "contact": "اتصل بنا",
-    "learn_more": "اعرف المزيد",
-    "download_brochure": "تحميل الكتيب",
-    "phone": "رقم الهاتف",
-    "email": "عنوان البريد الإلكتروني",
-    "location": "الموقع",
-    "follow_us": "تابعنا",
-    "submit": "إرسال",
-    "name": "الاسم",
-    "message": "الرسالة",
-    "send_message": "إرسال الرسالة",
-    "home": "الرئيسية",
-    "nasq_description": "ناسِك هو نظام GRC مدعوم بالذكاء الاصطناعي مصمم لتعزيز إدارة الحوكمة والمخاطر والامتثال.",
-    "address": "الرياض، المملكة العربية السعودية"
-  }
+    "en": {
+        // Navigation
+        "home": "Home",
+        "features": "Features",
+        "about": "About",
+        "contact": "Contact",
+        
+        // Hero Section
+        "hero_title": "Welcome to NASQ",
+        "hero_desc": "Transform Your GRC Management with AI-powered governance, risk, and compliance solutions for the modern enterprise",
+        "download": "Download Brochure",
+        
+        // Features Section
+        "why_choose": "Why Enterprises Choose NASQ",
+        "feature1": "AI-Driven Capabilities",
+        "feature1_desc": "Smart compliance workflows and predictive risk analytics",
+        "feature2": "Unlimited Standards Configuration",
+        "feature2_desc": "Customizable frameworks for any standard or regulation",
+        "feature3": "Smart Audits",
+        "feature3_desc": "Automated evidence collection and real-time reporting",
+        "feature4": "Corrective Actions Management",
+        "feature4_desc": "Track and resolve compliance issues efficiently",
+        "feature5": "Integrated Management System",
+        "feature5_desc": "Unify quality, risk, and compliance processes",
+        "feature6": "Integrated Risk Management",
+        "feature6_desc": "Proactively identify, assess, and mitigate risks",
+        
+        // About Section
+        "what_is_nasq": "What is NASQ?",
+        "nasq_intro": "NASQ is the Next-Gen GRC Platform that revolutionizes compliance management with AI-driven automation, real-time risk insights, and seamless integration with global standards.",
+        "nasq_intro_2": "Our platform empowers organizations to streamline certification processes, maintain continuous compliance, and transform risk management into a strategic advantage.",
+        
+        // Footer
+        "footer": "© 2025 NASQ. All rights reserved.",
+        
+        // Contact Page (Add these data-key attributes to contact.html)
+        "contact_title": "Contact Us",
+        "phone_label": "Phone:",
+        "email_label": "Email:",
+        "location_label": "Location:"
+    },
+    "ar": {
+        // Navigation
+        "home": "الرئيسية",
+        "features": "المميزات",
+        "about": "من نحن",
+        "contact": "اتصل بنا",
+        
+        // Hero Section
+        "hero_title": "مرحبا بكم في نسق",
+        "hero_desc": "حوّل إدارة الحوكمة والمخاطر والامتثال باستخدام حلول مدعومة بالذكاء الاصطناعي للمؤسسات الحديثة",
+        "download": "تحميل الكتيب",
+        
+        // Features Section
+        "why_choose": "لماذا تختار المؤسسات نسق؟",
+        "feature1": "إمكانيات مدعومة بالذكاء الاصطناعي",
+        "feature1_desc": "مسارات عمل ذكية للامتثال وتحليلات تنبؤية للمخاطر",
+        "feature2": "تكوين معايير غير محدود",
+        "feature2_desc": "أطر عمل قابلة للتخصيص لأي معيار أو تشريع",
+        "feature3": "تدقيقات ذكية",
+        "feature3_desc": "جمع تلقائي للأدوات وإعداد تقارير فورية",
+        "feature4": "إدارة الإجراءات التصحيحية",
+        "feature4_desc": "تتبع وحل مشكلات الامتثال بكفاءة",
+        "feature5": "نظام إدارة متكامل",
+        "feature5_desc": "توحيد عمليات الجودة والمخاطر والامتثال",
+        "feature6": "إدارة مخاطر متكاملة",
+        "feature6_desc": "تحديد وتقييم وتخفيف المخاطر بشكل استباقي",
+        
+        // About Section
+        "what_is_nasq": "ما هو نسق؟",
+        "nasq_intro": "نسق هو منصة GRC الجيل القادم التي تحدث ثورة في إدارة الامتثال من خلال الأتمتة المدعومة بالذكاء الاصطناعي، ورقابة المخاطر في الوقت الحقيقي، والتكامل السلس مع المعايير العالمية.",
+        "nasq_intro_2": "تمكّن منصتكم المؤسسات من تبسيط عمليات الشهادة، والحفاظ على الامتثال المستمر، وتحويل إدارة المخاطر إلى ميزة إستراتيجية.",
+        
+        // Footer
+        "footer": "© 2025 نسق. جميع الحقوق محفوظة.",
+        
+        // Contact Page
+        "contact_title": "اتصل بنا",
+        "phone_label": "هاتف:",
+        "email_label": "بريد إلكتروني:",
+        "location_label": "الموقع:"
+    }
 }
