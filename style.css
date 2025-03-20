@@ -234,6 +234,95 @@ h2, h3 {
     line-height: 1.6;
 }
 
+/* ================= ENHANCED CONTACT SECTION ================= */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 200px);
+    padding: 80px 0;
+    text-align: center;
+    background: var(--light-bg);
+    position: relative;
+}
+
+.contact h2 {
+    font-size: 2.8rem;
+    color: var(--primary-blue);
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.contact h2::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--accent-orange);
+    border-radius: 2px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+.contact strong {
+    display: inline-block;
+    min-width: 120px;
+    color: var(--primary-blue);
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.contact a {
+    color: var(--accent-orange);
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.contact a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-blue);
+    transition: width 0.3s ease;
+}
+
+.contact a:hover {
+    color: var(--primary-blue);
+}
+
+.contact a:hover::after {
+    width: 100%;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: var(--primary-blue);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
 /* ================= RESPONSIVE DESIGN ================= */
 @media (max-width: 1024px) {
     .intro-content {
@@ -275,6 +364,25 @@ h2, h3 {
     .intro-image img {
         height: 400px;
     }
+
+    .contact {
+        min-height: auto;
+        padding: 60px 0;
+    }
+    
+    .contact h2 {
+        font-size: 2.2rem;
+    }
+    
+    .contact-info {
+        padding: 30px;
+        width: 90%;
+    }
+    
+    .contact p {
+        font-size: 1rem;
+        margin: 25px 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -289,5 +397,15 @@ h2, h3 {
     
     .feature-card {
         padding: 30px;
+    }
+
+    .contact h2::after {
+        bottom: -15px;
+        width: 60px;
+    }
+    
+    .contact strong {
+        display: block;
+        margin-bottom: 8px;
     }
 }
