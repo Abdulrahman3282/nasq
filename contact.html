@@ -1,29 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
+    <!-- Add the same head content as index.html -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - NASQ</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Add the same navbar as index.html -->
     <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="/">
+            <img src="logo.png" alt="NASQ Logo" class="logo">
+        </a>
+        <div class="nav-links">
+            <a href="index.html" data-key="home">Home</a>
+            <a href="#" data-key="contact">Contact</a>
+        </div>
+        <button id="lang-switch" class="btn">العربية</button>
     </nav>
 
-    <!-- Contact Section -->
+    <!-- Update contact section with data-key attributes -->
     <section class="contact">
-       <h2 data-key="contact_title">Contact Us</h2>
-            <p><strong data-key="phone_label">Phone:</strong>+966 114004782</p>
-            <p><strong data-key="email_label">Email:</strong>info@aqsustain.com</p>
-            <p><strong data-key="location_label">Location:</strong>Riyadh, KSA</p>
+        <h2 data-key="contact_title">Contact Us</h2>
+        <p><strong data-key="phone_label">Phone:</strong> <a href="tel:+966114004782">+966 114004782</a></p>
+        <p><strong data-key="email_label">Email:</strong> <a href="mailto:info@aqsustain.com">info@aqsustain.com</a></p>
+        <p><strong data-key="location_label">Location:</strong> Riyadh, KSA</p>
     </section>
 
-    <!-- Footer -->
+    <!-- Add the same footer as index.html -->
     <footer class="footer">
-        <p>&copy; 2025 NASQ. All rights reserved.</p>
+        <p data-key="footer">&copy; 2025 NASQ. All rights reserved.</p>
     </footer>
+
+    <!-- Include the same scripts as index.html -->
+    <script src="scripts.js?v=2.0"></script>
 </body>
 </html>
